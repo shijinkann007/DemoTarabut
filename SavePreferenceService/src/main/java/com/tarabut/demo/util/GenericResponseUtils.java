@@ -16,7 +16,7 @@ public class GenericResponseUtils {
  	}
 
 	public static GenericResponse buildGenericResponseError(Throwable t) {
-  		return new GenericResponse("error",400,Arrays.asList(t.getCause().getMessage()),null);
+  		return new GenericResponse("Error",400,Arrays.asList(t.getCause().getMessage()),null);
 
 	}
 
