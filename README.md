@@ -5,7 +5,8 @@ SpringBoot application for saving and retreiving customer's marketing preference
 - Java 11
 - Get Preference Service : microservice for retrieving customer's marketing preference
 - Save Preference Service : microservice for save/update customer's marketing preference
-- MongoDB Atlas database-as-a-service on AWS
+- MongoDB Atlas database-as-a-service on AWS -> access control based on IP address.  
+- Save operations are password protected. [admin,admin12]
  
 # Requirements
  - Java 11 
