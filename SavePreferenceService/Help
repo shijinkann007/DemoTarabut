@@ -1,0 +1,6 @@
+docker build -t storepref .
+docker run -p 8084:8084 storepref
+
+docker images
+docker container ls
+docker stop container id

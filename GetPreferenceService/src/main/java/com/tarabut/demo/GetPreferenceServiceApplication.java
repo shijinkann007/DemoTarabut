@@ -1,0 +1,13 @@
+package com.tarabut.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class GetPreferenceServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GetPreferenceServiceApplication.class, args);
+	}
+
+}

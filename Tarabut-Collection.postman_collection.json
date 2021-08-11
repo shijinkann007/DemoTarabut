@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "c8d9bb6b-dfdd-4412-8bf7-8ba43d290bf8",
+		"name": "Tarabut-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8084/api/preference",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin12",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"someemail@gmail.com\",\n  \"fullname\": \"someone some\",\n  \"marketingPreference\": \"Email\",\n  \"mobileNumber\": \"+9715542677\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/preference",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"preference"
+					]
+				},
+				"description": "POST method to save new customer preference"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8084/api/preference",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin12",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"someemail@gmail.com\",\n  \"fullname\": \"someone some\",\n  \"marketingPreference\": \"Email\",\n  \"mobileNumber\": \"+9715542677\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/preference",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"preference"
+					]
+				},
+				"description": "PUT method to save or update customer preference"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8085/api/preference/mobile/+971556108826",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/preference/mobile/+971556108826",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"preference",
+						"mobile",
+						"+971556108826"
+					]
+				},
+				"description": "GET - by mobile number"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8085/api/preference/email/shijinkann@gmail.com",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/preference/email/shijinkann007@gmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"preference",
+						"email",
+						"shijinkann007@gmail"
+					]
+				},
+				"description": "GET by email id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8085/api/preference/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/preference/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"preference",
+						""
+					]
+				},
+				"description": "Get all preferences"
+			},
+			"response": []
+		}
+	]
+}
